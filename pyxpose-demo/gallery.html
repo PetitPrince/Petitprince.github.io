@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My cat</title>
+    <meta name="description" content="A gallery about my cat." />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+
+    /* Toggle EXIF and captions with a click*/
+    /* Not in the mood of using jquery for such small stuff; using vanilla JS instead
+    https://gist.github.com/liamcurry/2597326*/
+
+    function addRunTimeCSS (content) {
+      // Inspired by https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+      var newDiv = document.createElement('style');
+      newDiv.id = 'runtime_css'
+      var newContent = document.createTextNode(content);
+      newDiv.appendChild(newContent); //add the text node to the newly created div.
+
+      // add the newly created element and its content into the DOM
+      var currentDiv = document.getElementById("runtime_css");
+      document.head.appendChild(newDiv, currentDiv);
+    }
+
+    function removeRunTimeCSS(){
+       var toBeRemoved = document.getElementById("runtime_css")
+       document.head.removeChild(toBeRemoved)
+    }
+
+    function toggleFullScreen() {
+      /* https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API */
+      var doc = window.document;
+      var docEl = doc.documentElement;
+
+      var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+      var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+      if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+        requestFullScreen.call(docEl);
+      }
+      else {
+        cancelFullScreen.call(doc);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+
+        var exifs = document.querySelectorAll('.exif');
+        var captions = document.querySelectorAll('.caption');
+        var toggleEXIF = document.getElementById('toggleEXIF');
+        var toggleCaptions = document.getElementById('toggleCaptions');
+        var toggleFullscreen = document.getElementById('toggleFullscreen');
+        toggleEXIF.onclick = function(){
+            for (var i = 0; i < exifs.length; i++) {
+              exifs[i].classList.toggle('hidden');
+              }
+                return false;
+            };
+        toggleCaptions.onclick = function(){
+            for (var i = 0; i < captions.length; i++) {
+              captions[i].classList.toggle('hidden');
+              }
+                return false;
+            };
+        toggleFullscreen.onclick = function(){
+           toggleFullScreen()
+         };
+    })
+
+    /* Change sidebar color depending on the scroll state*/
+
+    /* OnScroll with reasonable performance */
+    /* http://joshbroton.com/hooking-up-to-the-window-onscroll-event-without-killing-your-performance/
+       and also: http://ejohn.org/blog/learning-from-twitter/ */
+    var didScroll = false;
+    window.onscroll = activateScroll;
+
+    function activateScroll() {
+        didScroll = true;
+    }
+
+    setInterval(function() {
+        if(didScroll) {
+            didScroll = false;
+
+            var $sidebar = document.getElementsByTagName('aside')[0];
+
+            /*I'm using code to generate code... meh.*/
+            
+                var $slide_1 = document.getElementById('slide-1');
+            
+                var $slide_2 = document.getElementById('slide-2');
+            
+                var $slide_3 = document.getElementById('slide-3');
+            
+                var $slide_4 = document.getElementById('slide-4');
+            
+                var $slide_5 = document.getElementById('slide-5');
+            
+                var $slide_6 = document.getElementById('slide-6');
+            
+            
+                
+                if(window.scrollY >= $slide_1.offsetTop - $slide_1.offsetTop/4){
+                    if(window.scrollY < $slide_2.offsetTop - $slide_2.offsetTop/4){
+                        
+                            backColor = "rgb(189 , 130, 83 )";
+                            frontColor = "rgb(342 , 235, 150 )";
+                            removeRunTimeCSS();
+                            addRunTimeCSS('aside{color:'+frontColor+'; background:'+backColor+'} aside a{color:'+frontColor+'} .caption a{border-color: '+frontColor+' !important}');
+                            // $sidebar.style.backgroundColor = "rgb(189 , 130, 83 )";
+                            // $sidebar.style.color = "rgb(342 , 235, 150 )";
+
+                        
+                        }
+                    }
+                
+            
+                
+                if(window.scrollY >= $slide_2.offsetTop - $slide_2.offsetTop/4){
+                    if(window.scrollY < $slide_3.offsetTop - $slide_3.offsetTop/4){
+                        
+                            backColor = "rgb(49 , 27, 28 )";
+                            frontColor = "rgb(202 , 111, 115 )";
+                            removeRunTimeCSS();
+                            addRunTimeCSS('aside{color:'+frontColor+'; background:'+backColor+'} aside a{color:'+frontColor+'} .caption a{border-color: '+frontColor+' !important}');
+                            // $sidebar.style.backgroundColor = "rgb(49 , 27, 28 )";
+                            // $sidebar.style.color = "rgb(202 , 111, 115 )";
+
+                        
+                        }
+                    }
+                
+            
+                
+                if(window.scrollY >= $slide_3.offsetTop - $slide_3.offsetTop/4){
+                    if(window.scrollY < $slide_4.offsetTop - $slide_4.offsetTop/4){
+                        
+                            removeRunTimeCSS();
+                            addRunTimeCSS('');
+                            $sidebar.style.backgroundColor = "";
+                            $sidebar.style.color = "";
+                        
+                        }
+                    }
+                
+            
+                
+                if(window.scrollY >= $slide_4.offsetTop - $slide_4.offsetTop/4){
+                    if(window.scrollY < $slide_5.offsetTop - $slide_5.offsetTop/4){
+                        
+                            backColor = "rgb(123 , 90, 51 )";
+                            frontColor = "rgb(276 , 201, 114 )";
+                            removeRunTimeCSS();
+                            addRunTimeCSS('aside{color:'+frontColor+'; background:'+backColor+'} aside a{color:'+frontColor+'} .caption a{border-color: '+frontColor+' !important}');
+                            // $sidebar.style.backgroundColor = "rgb(123 , 90, 51 )";
+                            // $sidebar.style.color = "rgb(276 , 201, 114 )";
+
+                        
+                        }
+                    }
+                
+            
+                
+                if(window.scrollY >= $slide_5.offsetTop - $slide_5.offsetTop/4){
+                    if(window.scrollY < $slide_6.offsetTop - $slide_6.offsetTop/4){
+                        
+                            backColor = "rgb(159 , 161, 167 )";
+                            frontColor = "rgb(304 , 308, 320 )";
+                            removeRunTimeCSS();
+                            addRunTimeCSS('aside{color:'+frontColor+'; background:'+backColor+'} aside a{color:'+frontColor+'} .caption a{border-color: '+frontColor+' !important}');
+                            // $sidebar.style.backgroundColor = "rgb(159 , 161, 167 )";
+                            // $sidebar.style.color = "rgb(304 , 308, 320 )";
+
+                        
+                        }
+                    }
+                
+            
+                
+                if(window.scrollY >= $slide_6.offsetTop){
+                    
+                        backColor = "rgb(151 , 125, 94 )";
+                        frontColor = "rgb(304 , 251, 189 )";
+                        removeRunTimeCSS()
+                        addRunTimeCSS('aside{color:'+frontColor+'; background:'+backColor+'} aside a{color:'+frontColor+'}')
+
+                        //$sidebar.style.backgroundColor = "rgb(151 , 125, 94 )";
+                        //$sidebar.style.color = "rgb(304 , 251, 189 )";
+                    
+                }
+
+                
+            
+
+        }
+    }, 100);
+    </script>
+
+    <style id="runtime_css">
+    </style>
+
+</head>
+
+<body>
+<aside>
+  <!--
+  <div class="branding">
+      ⁋
+  </div>
+  -->
+  <div class="galery-title">
+      <h1>My cat</h1>
+  </div>
+    <p>This is a gallery about my cute cat. More info about this breed at:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Australian_Mist">Wikipedia</a></li>
+<li><a href="http://www.australianmist.info">The Australian Mist Breed Council</a></li>
+<li><a href="https://encrypted.google.com/search?hl=en&amp;amp;q=austrlian%20mist">Google</a></li>
+</ul>
+  <div class="actionable">
+    <ul>
+      <li><a id="toggleFullscreen" href="#">Toggle fullscreen</a></li>
+      <li><a id="toggleCaptions" href="#">Toggle captions</a></li>
+      <li><a id="toggleEXIF" href="#">Toggle EXIF</a></li>
+    </ul>
+  </div>
+</aside>
+
+<article>
+    
+            
+        <div class="slide photo" id="slide-1">
+                
+            <p class="exif hidden">
+                
+                ƒ/<span class="exif-value">2.2</span> |
+                
+                
+                <span class="exif-value">1/60</span>s |
+                
+                
+                <span class="smallcaps">iso</span> <span class="exif-value">1600</span> |
+                
+                
+                <span class="exif-value">53</span>mm
+                
+            </p>
+                
+            
+            <div class="caption " style="top: 40%; left: 55%; width: 40%; height: 40%; ">
+                
+                    <h1>Meet my cat</h1>
+<p>Her name is Pocari (after the <a href="https://en.wikipedia.org/wiki/Pocari_Sweat">Japanese beverage</a>, for no particular reason)</p>
+                
+            </div>
+            
+
+            <img srcset ="img/1-Meet-1920.jpg 1920w, img/1-Meet-1280.jpg 1280w, img/1-Meet-1024.jpg 1024w, img/1-Meet-640.jpg 640w"
+                 sizes="85vw"
+                 src="img/1-Meet-1280.jpg"
+            />
+
+            
+        </div>
+    
+            
+        <div class="slide photo" id="slide-2">
+                
+            <p class="exif hidden">
+                
+                ƒ/<span class="exif-value">1.4</span> |
+                
+                
+                <span class="exif-value">1/60</span>s |
+                
+                
+                <span class="smallcaps">iso</span> <span class="exif-value">2000</span> |
+                
+                
+                <span class="exif-value">53</span>mm
+                
+            </p>
+                
+            
+            <div class="caption " style="top: 30%; left: 5%; width: 20%; height: 40%; ">
+                
+                    <p>She's a purebreed "<a href="https://en.wikipedia.org/wiki/Australian_Mist">Austrialian Mist</a>". This breed is relatively recent (1976), and is a mix between Burmese, Abyssinian and some random house cat. So in a way she's not very purebreed at all, which is all for the better.</p>
+                
+            </div>
+            
+
+            <img srcset ="img/2-Mist-1920.jpg 1920w, img/2-Mist-1280.jpg 1280w, img/2-Mist-1024.jpg 1024w, img/2-Mist-640.jpg 640w"
+                 sizes="85vw"
+                 src="img/2-Mist-1280.jpg"
+            />
+
+            
+        </div>
+    
+            
+        <div class="slide text" id="slide-3">
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=83.935546875%2C-49.03786794532641%2C166.376953125%2C3.162455530237848&amp;layer=mapnik" style="float:left; margin: 1em"></iframe>
+
+<p>Like the name suggest, most Australian Mist catteries are in Australia. however, there are a few in the UK and the USA.</p>
+            
+        </div>
+    
+            
+        <div class="slide photo" id="slide-4">
+                
+            <p class="exif hidden">
+                
+                ƒ/<span class="exif-value">1.4</span> |
+                
+                
+                <span class="exif-value">1/60</span>s |
+                
+                
+                <span class="smallcaps">iso</span> <span class="exif-value">3200</span> |
+                
+                
+                <span class="exif-value">53</span>mm
+                
+            </p>
+                
+            
+            <div class="caption " style="top: 57%; left: 64%; width: 20%; height: 20%; ">
+                
+                    <p>She was still a little bit shy when we brought her home from her breeder.</p>
+                
+            </div>
+            
+
+            <img srcset ="img/4-Shy-1920.jpg 1920w, img/4-Shy-1280.jpg 1280w, img/4-Shy-1024.jpg 1024w, img/4-Shy-640.jpg 640w"
+                 sizes="85vw"
+                 src="img/4-Shy-1280.jpg"
+            />
+
+            
+        </div>
+    
+            
+        <div class="slide photo" id="slide-5">
+                
+            <p class="exif hidden">
+                
+                ƒ/<span class="exif-value">2.8</span> |
+                
+                
+                <span class="exif-value">1/125</span>s |
+                
+                
+                <span class="smallcaps">iso</span> <span class="exif-value">400</span> |
+                
+                
+                <span class="exif-value">53</span>mm
+                
+            </p>
+                
+            
+            <div class="caption " style="top: 10%; left: 10%; width: 20%; height: 20%; ">
+                
+                    <p>But since then. she warmed up quite a bit and loves to play with her toy. She is even getting along well with our dog.</p>
+                
+            </div>
+            
+
+            <img srcset ="img/5-Dog-1920.jpg 1920w, img/5-Dog-1280.jpg 1280w, img/5-Dog-1024.jpg 1024w, img/5-Dog-640.jpg 640w"
+                 sizes="85vw"
+                 src="img/5-Dog-1280.jpg"
+            />
+
+            
+        </div>
+    
+            
+        <div class="slide photo" id="slide-6">
+                
+            <p class="exif hidden">
+                
+                ƒ/<span class="exif-value">1.4</span> |
+                
+                
+                <span class="exif-value">1/60</span>s |
+                
+                
+                <span class="smallcaps">iso</span> <span class="exif-value">3200</span> |
+                
+                
+                <span class="exif-value">53</span>mm
+                
+            </p>
+                
+            
+            <div class="caption  light " style="top: 70%; left: 70%; width: 25%; height: 20%;   ">
+                
+                    <p>Her favorite sleep position is curled up into a ball like so. <em>Adorable</em> !</p>
+                
+            </div>
+            
+
+            <img srcset ="img/6-Sleep-1920.jpg 1920w, img/6-Sleep-1280.jpg 1280w, img/6-Sleep-1024.jpg 1024w, img/6-Sleep-640.jpg 640w"
+                 sizes="85vw"
+                 src="img/6-Sleep-1280.jpg"
+            />
+
+            
+        </div>
+    
+</article>
+</body>
+</html>

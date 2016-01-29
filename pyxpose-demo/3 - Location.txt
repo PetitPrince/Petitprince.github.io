@@ -1,0 +1,3 @@
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=83.935546875%2C-49.03786794532641%2C166.376953125%2C3.162455530237848&amp;layer=mapnik" style="float:left; margin: 1em"></iframe>
+
+Like the name suggest, most Australian Mist catteries are in Australia. however, there are a few in the UK and the USA.
