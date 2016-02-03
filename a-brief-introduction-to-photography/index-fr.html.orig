@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Une brève introduction à la Photographie</title>
+
+		<meta name="description" content="A brief introduction to Photography">
+		<meta name="author" content="Hoang Pham">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/phototheme/mytheme.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Include the appropriate print stylesheet -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+				<section class="intro">
+					<h1><span class="small-title">Une brève introduction à la</span> <br /> <span class="big-title">Photographie</span></h1>
+
+					<p>
+						Hoang Pham, Club Photo EPFL
+						<a href="https://github.com/PetitPrince">Hoang Pham</a> | <a href="http://photo.epfl.ch">Club Photo EPFL</a> | 25.09.14
+					</p>
+					<aside class="notes">
+						Bienvenue, blabla
+					</aside>
+				</section>
+
+				<section data-state="toc" class="toc" >
+					<div class="side-title"></div>
+					<h2>Aujourd'hui</h2>
+					<ol>
+						<li><span class="toc-item">Food for thought</span></li>
+						<li><span class="toc-item">Photographier, c'est bien exposer</span>
+							<ul><li class="toc-subitem">Ouverture, Vitesse, ISO</li></ul>
+						</li>
+						<li><span class="toc-item">Tout le reste</span>
+							<ul><li class="toc-subitem">Mesure de la lumière, Autofocus</li></ul>
+						</li>
+						<li><span class="toc-item">Divers petits trucs</span></li>
+					</ol>
+
+					<aside class="notes">
+						Menu ajourd'hui
+					</aside>
+				</section>
+
+				<section class="quote-ansel" data-state="anseladams" data-background="img/AnselAdamTetonSnakeRiver.jpg">
+					<blockquote class="fragment fade-out" data-fragment-index="1">You don't take a photograph,<br /> you make it.</blockquote>
+					<cite class="fragment fade-out" data-fragment-index="1">—Ansel Adams</cite>
+
+					<blockquote class="fragment roll-in" data-fragment-index="1">La photo, c'est de la cuisine.</blockquote>
+					<cite class="fragment roll-in" data-fragment-index="1">—Moi</cite>
+
+					<aside class="notes">
+						Commencer par une petite citation d'un photographe de paysage très connu. Ca dit: "On ne prends pas une photo, on la fabrique." C'est une des citation qui raisonne le plus avec moi et je la trouve très juste. Ca veut dire que prendre une photo, ca n'est pas simplement pointer son appareil photo quelque part. Ca veut dire être un artisan et comprendre et si possible maitriser tous les aspects de la photo, y compris les aspects technique. Mais je la trouve un peu catégorique, alors permettez-moi de la modifier un peu <br> *click*. Ok c'est très bête, mais laissez-moi vous expliquer.
+					</aside>
+
+
+				</section>
+
+				<section class="blackforest">
+					<section>
+					<img style="width:45%" src="img/migros-blackforest.jpg" class="nodeco">
+					<img style="width:45%" src="img/blackforest-gf.jpg" class="nodeco">
+
+					<aside class="notes">
+						<p>
+						 A gauche vous voyez une forêt noire de la migros, et à droite une forêt noire de ma copine. Tout les deux sont raisonnablement bons, mais celui de ma copine à un petit quelque chose de particulier, sans doute parce que je lui donne souvent un coup de main (enfin, de fouet electrique) pour le faire.
+						</p>
+						<p>Le parallèle que je veux faire avec la photo est que c'est parfaitement acceptable et normal d'acheter ses gâteaux dans le commerce; en terme photo, de mettre l'appareil en mode automatique et photographier sans trop y penser. Mais quand on commence à vouloir s'intéresser plus près, on peut faire des choses bien meilleurs que tout ce qui se trouve dans le commerce.</p>
+						<p>
+						Qui a du Nikon, qui a du Canon, Sony, Pentax, Ricoh, ... ? </p>
+
+						<p>Ca ne change rien parce que tous les appareils photo fonctionnent la même chose !</p>
+					</aside>
+				</section>
+
+				</section>
+
+				<section>
+					<section class="principle dark" data-background="#101010" data-backgroundTransition="zoom">
+						<img src="img/camera-obscura.jpg" style="width:80%;">
+						<h4>Tous les appareils photos sont les mêmes.</h4>
+					<aside class="notes">
+					<p>Fondamentalement, c'est une boite qui contient une surface photosensible et ne laisse pas passer la lumière sauf dans un trou. </p>
+					</aside>
+					</section>
+
+					<section class="principle dark" data-background="#101010">
+						<img class="" src="img/Olympus_E-3_cut.jpg" style="width:80%;">
+						<h4>Tous les appareils photos sont les mêmes.</h4>
+						<div class="credit">Crédit photo: <a href="https://commons.wikimedia.org/wiki/File:Olympus_E-3_cut.jpg">Hanabi123</a></div>
+						<aside class="notes">
+						<p>Fondamentalement, c'est une boite qui contient une surface photosensible et ne laisse pas passer la lumière sauf dans un trou. </p>
+						<p>Ici on a rajouté des trucs pour se rendre la vie plus pratique comme un bout de verre, un autre bout de verre et une autre ouverture</p>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section class="good-exposure" data-transition="fade">
+						<img src="img/exposition-overexposed.jpg" style="width:80%;" class="fragment roll-in" data-fragment-index="4">
+						<span class="fragment fade-out" data-fragment-index="4"><h1 class="fragment roll-in example" data-fragment-index="3" style="left:1.8em;">Exemple d'</h1></span><h1 class="fragment fade-in over" data-fragment-index="4" style="left:5.7em;">Sur</h1><h1 class="fragment fade-out understand" style="left:0;" data-fragment-index="1">Comprendre l'</h1><h1 class="exposure" style="left:7.7em;">exposition</h1> <span class="fragment fade-out" data-fragment-index="3"><h1 class="fragment roll-in  qmark" style="left:13.5em;" data-fragment-index="2">?</h1></span>
+						<aside class="notes">
+							<p>La première qualité d'une "bonne" photo est d'être bien exposée </p>
+							<p>... mais c'est quoi l'exposition ?</p>
+							<p>Mieux vaut regarder des examples</p>
+							<p>Ceci est une photo sur-exposée: trop claire, on ne voit pas ce qui est écreit sur l'écran ni sur le badge</p>
+						</aside>
+					</section>
+
+					<section class="good-exposure" data-transition="fade">
+						<img src="img/exposition-underexposed.jpg" style="width:80%;">
+						<h1 class="under" style="left:4.9em;">Sous</h1><h1 class="exposure" style="left:7.7em;">exposition</h1>
+						<aside class="notes">
+						<p>Ceci est une photo sous-exposée: trop sombre. Seul le reflet semble être vu de premiers abord</p>
+						</aside>
+
+					</section>
+
+					<section class="good-exposure" data-transition="fade">
+						<img src="img/exposition-justright.jpg" class="fragment fade-out" style="width:80%;" data-fragment-index="1">
+					<h1 class="good" style="left:4em;">Bonne</h1><h1 class="exposure" style="left:7.7em;">exposition</h1><h1 class="fragment roll-in  qmark" data-fragment-index="2" style="left:13.5em;">?</h1>
+						<aside class="notes">
+						<p>Ceci est une photo correctement exposée: on voit tout, aucune information n'est cachée</p>
+						<p>Du coup ça dépend de quoi une bonner exposition ?</p>
+						</aside>
+
+					</section>
+
+					<section class="good-exposure" data-transition="fade">
+						<img src="img/exposition-justright.jpg" style="width:80%; visibility:hidden">
+						<h1 class="good" style="left:4em;">Bonne</h1><h1 class="exposure" style="left:7.7em;">exposition</h1>
+						<p class="aperture fragment roll-in" data-fragment-index="1">Ouverture</p>
+						<p class="speed fragment roll-in" data-fragment-index="2">Vitesse</p>
+						<p class="iso fragment roll-in" data-fragment-index="3">ISO</p>
+						<div class="arrow1 arrowAp fragment fade-in" data-fragment-index="1" style="transform:rotate(-40deg);">↑</div>
+						<div class="arrow1 arrowSp fragment fade-in" data-fragment-index="2">↑</div>
+						<div class="arrow1 arrowIs fragment fade-in" data-fragment-index="3" style="transform:rotate(40deg);">↑</div>
+						<div class="arrow2 arrowAp fragment fade-in" data-fragment-index="4" style="transform:rotate(40deg);">↑</div>
+						<div class="arrow2 arrowSp fragment fade-in" data-fragment-index="4">↑</div>
+						<div class="arrow2 arrowIs fragment fade-in" data-fragment-index="4" style="transform:rotate(-40deg);">↑</div>
+						<img src="img/cameradial.jpg" class="fragment roll-in" data-fragment-index="4" style="width:20%; position:absolute;top:0;left:50%;">
+						<div class="credit fragment fade-in" data-fragment-index="4">Credit Photo: <a href="https://www.flickr.com/photos/93755244@N00/4193693304/">Håkan Dahlström</a></div>
+<<<<<<< HEAD
+=======
+					</section>
+>>>>>>> 69f3f133983461d769b0c3664cb573f789578f33
+					<aside class="notes">
+						<p>Ca dépend de trois choses: ouverture, vitesse, ISO</p>
+						<p>La plupart de ces choses sont accessibles en tournant la molette du mode automatique en mode manuel. Ne vous inquitez pas ça fait pas peur et il ne vous arrivera rien.</p>
+					</aside>
+					</section>
+
+
+
+				</section>
+
+				<section class="icecube">
+					<section class="icecube-intro" data-background="img/iceblock.jpg">
+					<h1>Ouverture, vitesse et ISO expliqués avec un bac à glaçon</h1>
+					<div class="credit" style="right:-1em">Credit Photo: <a href="https://www.flickr.com/photos/91572751@N00/292419749/">Jesús Gorriti</a></div>
+					<div class="credit" style="right:-2em">Concept du bac à glaçon: volé chez <a href="http://www.lense.fr/2007/04/26/lense-2-bilan-et-plan-a-5-ans/">Lense.fr</a></div>
+					<aside class="notes">
+						<p>Parce que j'ai mon arme secrete !</p>
+						<p>Dans cet analogie, votre appareil photo est un bac à glaçon. Le robinet est la scène devant vous qui va envoyé de la lumière --- ici, de l'eau. Donc un bac à glaçon, il faut le remplir. Mais comment ?</p>
+						</aside>
+
+					</section>
+
+					<section class="icecube-goodexpo" data-transition="fade">
+						<img class="ice-faucet" src="img/ice-normal.jpg">
+						<img src="img/exposition-justright.jpg" class="icereallife fragment roll-in">
+						<h3>Juste assez d'eau</h3>
+						<aside class="notes">
+							En mettant juste assez d'eau. En terme photo, il faut bien exposer une photo.
+						</aside>
+
+					</section>
+
+					<section class="icecube-overexpo" data-transition="fade">
+						<img class="ice-faucet" src="img/ice-over.jpg">
+						<img src="img/exposition-overexposed.jpg" class="icereallife fragment roll-in">
+						<h3>Trop d'eau</h3>
+
+						<aside class="notes">
+						<p>Qu'est-ce qui se passe si on mets trop d'eau ? EH bien il y a tout qui coule et le congélateur devient dégueu.</p>
+						<p>Sur la photo ça veut dire que tout devient blanc parce que trop de lumière</p>
+						</aside>
+					</section>
+
+					<section class="icecube-underexpo" data-transition="fade">
+						<img class="ice-faucet" src="img/ice-under.jpg">
+						<img src="img/exposition-underexposed.jpg" class="icereallife fragment roll-in">
+						<h3>Pas assez d'eau</h3>
+						<aside class="notes">
+						<p>Si on ne mets pas assez d'eau, et bien on a simplement pas beaucoup de glaçon. Sur la photo ça veut dire que tout est trop sombre</p>
+						<p>Maintenant, comment est-ce que vous faite pour remplir le bac à glaçon ? Il y a deux extrême</p>
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<img class="ice-faucet" src="img/faucet-f8.jpg" style="height:600px"> <img class="ice-faucet" src="img/faucet-f2.jpg" style="height:600px">
+					<h3 style="width:400px;position:absolute;bottom:-2em;left: 2em;">Petit débit, long moment sous l'eau</h3>
+					<h3 style="width:400px;position:absolute;bottom:-2em;right:2em;">Grand débit, petit moment sous l'eau</h3>
+					<div class="clock" style="top:2em;left:9.6em;">
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="slice" data-start="0" data-value="30"></div>
+					</div>
+					<div class="clock" style="top:2em;right:2.6em;">
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="slice moreThan180" data-start="0" data-value="220"></div>
+					</div>
+						<aside class="notes">
+						<p>Dans un des extrêmes, on mets seulement un mince filet d'eau et on laisse le bac longtemps sous le robinet</p>
+						<p>Dans l'autre extrême, on ouvre l'eau à fond et on mets le bac à glaçon seulement quelques microsecondes.</p>
+						<p>En photo on peut faire la même chose.</p>
+						</aside>
+				</section>
+
+				<section>
+					<section class="threeParts">
+						<img class="ice-faucet" src="img/faucet-f2.jpg" style="position:absolute; left:34%;height:500px">
+						<div class="clock" style="top:1.5em;left:57%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="30"></div>
+						</div>
+
+							<h1 class="speed">←</h1>
+							<div class="speed desc">
+								<h3>Temps sous l'eau</h3>
+								<h2 class="fragment highlight-red">Vitesse</h2>
+							</div>
+
+							<h1 class="aperture">→</h1>
+							<div class="aperture desc">
+								<h3>Débit d'eau</h3>
+								<h2>Ouverture</h2>
+							</div>
+
+							<h1 class="ISO">←</h1>
+							<div class="ISO desc">
+								<h3>Hauteurs des trous</h3>
+								<h2>ISO</h2>
+							</div>
+
+						<aside class="notes">
+							<p>Donc dans notre exemple/analogie, on peut repérer trois éléments: le temps que l'on mets le bac à glaçon sous l'eau, le débit de l'eau et la hauteur des trous.</p>
+							<p>Donc le premier paramètre dont je vais vous parler est la vitesse ou temps d'exposition.</p>
+						</aside>
+
+
+					</section>
+
+					<section>
+						<h2>Vitesse de quoi au juste ?</h2>
+						<iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/jQ7nGrXehJs?rel=0" frameborder="0" allowfullscreen></iframe>
+						<aside class="notes">
+							<p>Quand on parle de vitesse, on parle de la "vitesse" de l'obturateur; le truc qui empêche la lumière d'entrer sur le capteur. Ici un example.</p>
+					</section>
+
+					<section>
+						<h1>Sur votre appareil photo</h1>
+						<img src="img/Shutter_priority_mode.svg" class="nodeco" style="height:600px" />
+						<div class="credit">Credit Image: <a href="https://commons.wikimedia.org/wiki/File:Shutter_priority_mode.svg">Althepal & Mehdi</a></div>
+						<aside class="notes">
+							<p>Sur votre appareil, on peut précisemment régler le temps d'exposition en se mettant sur le mode S (ou Tv sur Canon).</p>
+						</aside>
+					</section>
+
+					<section class="shutterSpeed">
+						<h1>Les chiffres</h1>
+						<ul>
+							<li>2"</li>
+							<li>1"</li>
+							<li>2</li>
+							<li>4</li>
+							<li>8</li>
+							<li>15</li>
+							<li>30</li>
+							<li>60</li>
+							<li>125</li>
+							<li>250</li>
+						</ul>
+						<div class="clock" style="top:3.25em;left:0%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice moreThan180" data-start="0" data-value="360"></div>
+						</div>
+						<div class="clock" style="top:3.25em;left:84%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="4"></div>
+						</div>
+
+						<h3 style="position: absolute;left:0">Plus de lumière</h3>
+						<h3 style="position: absolute;right:0">Moins de lumière</h3>
+
+						<h2 style="margin-top:10em;font-size:0.5em">Notes</h2>
+						<ol style="font-size:0.5em">
+							<li>60 = 1/60<i>s</i></li>
+							<li>Chaque pas laisse entrer 2 fois moins de lumière que le pas précédent</li>
+						</ol>
+
+						<aside class="notes">
+							<p>Quand vous mettez votre appareil sur S, et que vous bouger la molette, qu'est-ce qu'il se passe ? Il y a des chiffres qui bougent. Ces chiffres correspondent au temps d'exposition, en fraction de seconde</p>
+							<p>Son effet sur l'exposition est logique: plus on laisse longtemps le capteur à la lumière, plus on a de lumière sur la photo. Inversement, plus c'est court, moins il y a de lumière</p>
+						</aside>
+					</section>
+
+				</section>
+
+				<section class="shutterExample dark" data-background="#101010">
+					<section>
+						<h1>Impact créatif de la vitesse</h1>
+						<img src="img/shutterSpeed.jpg" style="width:900px">
+						<div class="clock" style="top:11.25em;left:4%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="30"></div>
+						</div>
+						<div class="clock" style="top:11.25em;left:38%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="120"></div>
+						</div>
+						<div class="clock" style="top:11.25em;left:69%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice moreThan180" data-start="0" data-value="240"></div>
+						</div>
+						<div class="credit">Credit Image: <a href="https://commons.wikimedia.org/wiki/File:Windflower-05237-nevit.JPG">Nevit Dilmen</a></div>
+
+						<aside class="notes">
+							<p>Donc chacun des règlages dont je vais vous parler à deux effets: un effet technique (donc plus de lumière, moins de lumière) et un effet créatif. Donc le principal effet créatif de la vitesse, c'est de figer le mouvement ou au contraire de l'expliciter.
+						</aside>
+					</section>
+
+					<section>
+						<img src="img/dolphin.jpg" style="height:700px">
+
+						<div class="clock" style="top:17.6em;left:69%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="30"></div>
+						</div>
+					<aside class="notes">
+						Figer le mouvement. Gouttes d'eau.
+					</aside>
+					</section>
+
+					<section>
+						<img src="img/motorway.jpg" style="width:960px">
+
+						<div class="clock" style="top:1.6em;left:88%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice moreThan180" data-start="0" data-value="330"></div>
+						</div>
+						<div class="credit">Credit Photo: <a href="https://www.flickr.com/photos/simongreen_uk/2724122992/">Simon Green</a></div>
+					<aside class="notes">
+						Expliciter le mouvement, trainée des voitures
+					</aside>
+					</section>
+
+					<section>
+						<img src="img/motion-blur.jpg" style="width:960px">
+
+						<div class="clock" style="top:1.6em;left:88%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice moreThan180" data-start="0" data-value="180"></div>
+						</div>
+						<div class="credit">Credit Photo: <a href="http://commons.wikimedia.org/wiki/File:Running-on-treadmills-motion-blur.jpg">Brandon Wiggins</a></div>
+					<aside class="notes">
+						Flou de mouvement, les pieds bougent alors que les machines restent
+					</aside>
+					</section>
+
+					<section>
+						<img src="img/panning.jpg" style="width:960px">
+
+						<div class="clock" style="top:15.6em;left:2%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="120"></div>
+						</div>
+						<div class="credit">Credit Photo: <a href="http://commons.wikimedia.org/wiki/File:Motorcycle_stunt_Schwarz_amk.jpg">AngMoKio</a></div>
+					<aside class="notes">
+						Panning: on bouge l'appareil photo tout en prenant la photo, du coup la moto parait relativement nette alors que le reste est flou.
+					</aside>
+					</section>
+					<section>
+						<img src="img/waterfall.jpg" style="width:960px">
+
+						<div class="clock" style="top:15.6em;left:2%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice moreThan180" data-start="0" data-value="360"></div>
+						</div>
+						<div class="credit">Credit Photo: <a href="http://commons.wikimedia.org/wiki/File:Motorcycle_stunt_Schwarz_amk.jpg">Sarahhoa</a></div>
+					<aside class="notes">
+						SUPER CLICHE, mais avec un trepied on peut faire ce genre de photo plus ou moins kitsch
+					</aside>
+					</section>
+				</section>
+				<section class="shutterSpeed">
+					<h1>Vitesse: TL;DR</h1>
+					<ul>
+						<li>2"</li>
+						<li>1"</li>
+						<li>2</li>
+						<li>4</li>
+						<li>8</li>
+						<li>15</li>
+						<li>30</li>
+						<li>60</li>
+						<li>125</li>
+						<li>250</li>
+					</ul>
+					<div class="clock" style="top:3.25em;left:0%;">
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="slice moreThan180" data-start="0" data-value="360"></div>
+					</div>						<div class="clock" style="top:3.25em;left:84%;">
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="slice" data-start="0" data-value="4"></div>
+					</div>
+
+					<img class="nodeco" src="img/motorway.jpg" style="height:240px; position:absolute;left:0;margin-top:1.5em">
+					<img class="nodeco" src="img/dolphin.jpg" style="width:200px; position:absolute;right:0;margin-top:1.5em">
+
+						<h3 style="position: absolute;right:0">Moins de lumière</h3>
+						<h3 style="position: absolute;left:0">Plus de lumière</h3>
+					<p style="position:absolute;left:375px;bottom:-2em; font-size:0.75em">Flou de mouvement</p>
+					<p style="position:absolute;right:218px;bottom:-9em; font-size:0.75em">Image figée</p>
+					<aside class="notes">
+					<p>EN RESUME: Temps d'exposition court = nombre grand = moins de lumière = plus de figé.</p>
+					</aside>
+				</section>
+				<section>
+					<section class="threeParts">
+						<img class="ice-faucet" src="img/faucet-f2.jpg" style="position:absolute; left:34%;height:500px">
+						<div class="clock" style="top:1.5em;left:57%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="30"></div>
+						</div>
+
+							<h1 class="speed">←</h1>
+							<div class="speed desc">
+								<h3>Temps sous l'eau</h3>
+								<h2>Vitesse</h2>
+							</div>
+
+							<h1 class="aperture">→</h1>
+							<div class="aperture desc">
+								<h3>Débit d'eau</h3>
+								<h2 class="fragment highlight-red">Ouverture</h2>
+							</div>
+
+							<h1 class="ISO">←</h1>
+							<div class="ISO desc">
+								<h3>Hauteurs des trous</h3>
+								<h2>ISO</h2>
+							</div>
+					<aside class="notes">
+						Ok, après la vitesse, on va voir l'ouverture ou autrement dit débit de l'eau. Donc ouverture. De quoi ?
+					</aside>
+					</section>
+					<section>
+						<h2>Ouverture de quoi au juste ?</h2>
+						<img src="img/aperture.jpg" style="width:900px">
+					<aside class="notes">
+						Quand on parle d'ouverture, on parle de l'ouverture de l'objectif. Sur les apppareils dont l'ouverture est controllé éléctroniquement, l'instant où l'objectif est petit comme ça dure seulement le temps de la photo. Mais si on a des vieux objectifs comme celui-là (50mm), on peut retracter manuellement les lames.
+					</aside>
+					</section>
+
+					<section>
+						<h1>Sur votre appareil photo</h1>
+						<img src="img/Aperture_priority_mode.svg" class="nodeco" style="height:600px" />
+						<div class="credit">Credit Image: <a href="https://commons.wikimedia.org/wiki/File:Shutter_priority_mode.svg">Althepal & Mehdi</a></div>
+						<aside class="notes">
+							<p>Sur votre appareil, on peut précisemment régler l'ouverture en se mettant sur le mode A (ou Av sur Canon).</p>
+						</aside>
+					</section>
+					<section class="shutterSpeed">
+						<h1>Les chiffres</h1>
+						<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:3.25em;left:0%;">
+						<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:3.25em;left:84%;">
+						<ul>
+							<li>1.4</li>
+							<li>2</li>
+							<li>2.8</li>
+							<li>4</li>
+							<li>5.6</li>
+							<li>8</li>
+							<li>11</li>
+							<li>16</li>
+							<li>22</li>
+							<li>32</li>
+						</ul>
+						<h3 style="position: absolute;left:0">Plus de lumière</h3>
+						<h3 style="position: absolute;right:0">Moins de lumière</h3>
+						<h2 style="margin-top:10em;font-size:0.5em">Notes</h2>
+						<ol style="font-size:0.5em">
+							<li>1.4 = √2 , 2 = (√2)<sup>2</sup>, 2.8 = (√2)<sup>3</sup>, 4 = (√2)<sup>4</sup> ... </li>
+							<li>Chaque pas laisse entrer 2 fois moins de lumière que le pas précédent</li>
+						</ol>
+						<aside class="notes">
+							<p>Les chiffres qui correspondent à ce que vous réglez sont comme suit, par multiple de racine de deux. Ca veut probablement rien dire pour vous, et pour moi aussi. Une autre façon de le voir est: plus ça s'approche de 1 (ou: plus c'est petit), plus c'est ouvert.</p>
+						</aside>
+					</section>
+				</section>
+				<section class="apertureExample dark" data-background="#101010">
+					<section>
+						<h1>Impact créatif de l'ouverture</h1>
+						<img src="img/DoF.jpg" style="height:600px">
+						<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:16.25em;left:30%;">
+						<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:16.25em;left:68%;">
+						<aside class="notes">
+							<p>Ok, comme pour la vitesse, l'ouverture a un impact créatif. C'est tout aussi visible que pour la vitese, et comme vous pouvez le voir c'est à propos du flou</p>
+							<p>Plus un objectif ouvre, plus la partie de l'image qui est nette se retrouve flou.</p>
+							<p>Attention aux abus pourtant, généralement quand on ouvre à 1.4 (le plus bas qu'on peut s'offrir sans vendre son premier né) et qu'on fait un portrait, ce qui arrive souvent est que le nez est net et les sourcils sont flous.</p>
+						</aside>
+
+					</section>
+
+					<section>
+						<img src="img/indian.jpg" style="width:900px">
+							<div class="credit">Credit Photo: <a href="https://commons.wikimedia.org/wiki/File:Sadhu_V%C3%A2r%C3%A2nas%C3%AE.jpg">Pierre-Emmanuel BOITON</a></div>
+							<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:1.25em;left:3%;">
+						<aside class="notes">
+						Donc ça sert à quoi ? Isoler le sujet
+						</aside>
+					</section>
+
+					<section>
+						<img src="img/library.jpg" style="width:900px">
+							<div class="credit">Credit Photo: <a href="https://commons.wikimedia.org/wiki/File:13-11-02-olb-by-RalfR-03.jpg">Ralf Roletschek</a></div>
+							<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:1.25em;left:3%;">
+						<aside class="notes">
+						Tout voir net
+						</aside>
+					</section>
+
+					<section>
+						<img src="img/train.jpg" style="width:900px">
+							<div class="credit">Credit Photo: <a href="https://commons.wikimedia.org/wiki/File:RhB_ABe_4-4_III_Kreisviadukt_Brusio.jpg">David Gubler</a></div>
+							<img class="nodeco" src="img/f8.png" style="width:100px;position:absolute;top:1.25em;left:3%;">
+						<aside class="notes">
+						Tout voir net, surtout dans les paysages
+						</aside>
+					</section>
+
+
+					<section>
+						<img src="img/girl.jpg" style="width:900px">
+							<div class="credit">Credit Photo: <a href="https://commons.wikimedia.org/wiki/File:Girl_with_styrofoam_swimming_board.jpg">Tommy Wong</a></div>
+							<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:1.25em;left:3%;">
+						<aside class="notes">
+						Mener le regard
+						</aside>
+					</section>
+
+					<section>
+						<img src="img/cats.jpg" style="height:700px">
+							<div class="credit">Credit Photo: <a href="https://commons.wikimedia.org/wiki/File:Halley_the_cat_2.jpg">Sage Ross</a></div>
+							<img class="nodeco" src="img/f2_8.png" style="width:100px;position:absolute;top:1.25em;left:22%;">
+						<aside class="notes">
+						Separation des plans (un peu comme isoler le sujet, mais en différent)
+						</aside>
+					</section>
+
+				</section>
+
+				<section class="shutterSpeed">
+					<h1>Ouverture: TL;DR</h1>
+					<ul>
+							<li>1.4</li>
+							<li>2</li>
+							<li>2.8</li>
+							<li>4</li>
+							<li>5.6</li>
+							<li>8</li>
+							<li>11</li>
+							<li>16</li>
+							<li>22</li>
+							<li>32</li>
+					</ul>
+					<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:3.25em;left:0%;">
+					<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:3.25em;left:84%;">
+
+<<<<<<< HEAD
+						<h3 style="position: absolute;left:0">Plus de lumière</h3>
+						<h3 style="position: absolute;right:0">Moins de lumière</h3>
+=======
+						<h3 style="position: absolute;left:0">Moins de lumière</h3>
+						<h3 style="position: absolute;right:0">Plus de lumière</h3>
+>>>>>>> 69f3f133983461d769b0c3664cb573f789578f33
+
+					<img class="nodeco" src="img/indian.jpg" style="width:300px; position:absolute;left:0;margin-top:1.5em">
+					<img class="nodeco" src="img/library.jpg" style="width:300px; position:absolute;right:0;margin-top:1.5em">
+					<p style="position:absolute;left:318px;bottom:-3em;font-size:0.75em">Bokeh!</p>
+					<p style="position:absolute;right:318px;bottom:-8em;font-size:0.75em">Tout est net</p>
+					<aside class="notes">
+					<p>EN RESUME: Petite ouverture = petit nombre = plus de lumière = plus de flou.</p>
+					</aside>
+				</section>
+
+			<section>
+					<section class="threeParts">
+						<img class="ice-faucet" src="img/faucet-f2.jpg" style="position:absolute; left:34%;height:500px">
+						<div class="clock" style="top:1.5em;left:57%;">
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+							<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+							<div class="slice" data-start="0" data-value="30"></div>
+						</div>
+
+							<h1 class="speed">←</h1>
+							<div class="speed desc">
+								<h3>Temps sous l'eau</h3>
+								<h2>Vitesse</h2>
+							</div>
+
+							<h1 class="aperture">→</h1>
+							<div class="aperture desc">
+								<h3>Débit d'eau</h3>
+								<h2>Ouverture</h2>
+							</div>
+
+							<h1 class="ISO">←</h1>
+							<div class="ISO desc">
+								<h3>Hauteurs des trous</h3>
+								<h2 class="fragment highlight-red">ISO</h2>
+							</div>
+						<aside class="notes">
+						<p>ISO maintenant, ça correspond à la profondeur du puit.</p>
+						</aside>
+
+					</section>
+
+					<section>
+						<h2>ISO-quoi ?</h2>
+						<img src="img/film_tmax400.jpg" style="width:300px"> <img src="img/film_konica160.jpg" style="width:300px"> <img src="img/film_fujifilm50.jpg" style="width:300px">
+						<h1 style="position:absolute;bottom:-2em;left:4%;">Kodak TMax <br /> 400</h1>
+						<h1 style="position:absolute;bottom:-2em;left:39%;">Konica Pro <br /> 160</h1>
+						<h1 style="position:absolute;bottom:-2em;left:68%;">Fujifilm Velvia <br /> 50</h1>
+						<div class="credit">Credit Photo: <a href="http://www.optics.rochester.edu/workgroups/cml/opt307/spr04/jidong/">University of Rochester Institute of Optics</a></div>
+						<aside class="notes">
+						<p>En argentique, l'ISO est facile à apréhender. Il s'agit de la taille des particules réactif à la lumière. Il faut s'imaginer que si un photon tombe sur une particule, celle-ci devient noire. Du coup plus la particule est grosse, plus il est facile de noircir la pellicule. Autrement dit, plus c'est gros, plus c'est sensible. </p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>ISO-quoi ?</h2>
+						<img class="fragment" src="img/Danger_High_Voltage.svg" style="width:300px" data-fragment-index="1">
+						<img src="img/sensor.jpg" style="width:300px">
+						<img class="fragment" src="img/Danger_Low_Voltage.svg" style="width:300px" data-fragment-index="2">
+						<h1 class="fragment" style="position:absolute;bottom:-1em;left:2%;" data-fragment-index="1">More sensitive</h1>
+						<h1 class="fragment" style="position:absolute;bottom:-1em;left:70%;" data-fragment-index="2">Less sensitive</h1>
+						<div class="credit">Credit Photo: <a href="http://commons.wikimedia.org/wiki/File:2011-12-20_17-38-36-capteur-10f.jpg">Thomas Bresson</a></div>
+						<aside class="notes">
+						<p>En numérique, on a pas de chimie, seulement un capteur. Pour le rendre plus ou moins sensible, on augmente ou diminue le voltage qui entre dans le capteur. Du coup le capteur change de "limace aphasique" à "caffeinomane en manque".</p>
+						</aside>
+					</section>
+					<section>
+						<h1>Sur votre appareil photo</h1>
+						<img src="img/canon_iso.jpg" style="width:450px"> <img src="img/nikon_iso.jpg" style="width:450px">
+						<div class="credit">Credit Photo: <a href="http://commons.wikimedia.org/wiki/File:Canon_EOS_mode_dial.jpg">NJM2010</a>
+						& <a href="http://commons.wikimedia.org/wiki/File:Mirror_up_mode.jpg">Arne List</a></div>
+						<aside class="notes">
+						<p>Sur votre appareil, ce réglage se fait soit en appuyant sur un bouton dédié, soit en fouillant dans un menu.</p>
+						</aside>
+					</section>
+					<section class="ISOnumbers">
+						<h1>Les chiffres</h1>
+						<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:3.25em;left:0%;">
+						<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:3.25em;left:84%;">
+						<ul>
+							<li>100</li>
+							<li>200</li>
+							<li>400</li>
+							<li>800</li>
+							<li>1600</li>
+							<li>3200</li>
+							<li>6400</li>
+							<li>12800</li>
+						</ul>
+						<h3 style="position: absolute;left:0">Moins sensible</h3>
+						<h3 style="position: absolute;right:0">Plus sensible</h3>
+						<h2 style="margin-top:10em;font-size:0.5em">Notes</h2>
+						<ol style="font-size:0.5em">
+							<li>Pour la même quantité de lumière entrant sur le capteur</li>
+							<li>Chaque pas capte 2 fois plus de lumière que le pas précédent</li>
+						</ol>
+						<aside class="notes">
+						<p>Donc les chiffres ... j'en ai aucune idée de ce que ça représente. Mais ce qui est important à savoir, c'est que plus c'est haut, plus c'est sensible. En film on peut aller jusqu'à 1600/3200, et après c'est de la science-fiction numérique.</p>
+						</aside>
+					</section>
+			</section>
+
+
+			<section class="apertureExample dark" data-background="#101010">
+				<section>
+					<h1>Bruit et grain</h1>
+					<img src="img/analogGrain.png" style="height:200px">
+					<img src="img/analogGrainZoom.png" style="height:200px">
+					<img src="img/digitalNoise.png" style="height:200px">
+					<img src="img/digitalNoiseZoom.png" style="height:200px">
+					<h2 style="position:absolute;bottom:-1em;left:20%">Analog</h2>
+					<h2 style="position:absolute;bottom:-1em;right:20%">Digital</h2>
+						<aside class="notes">
+						<p>Bien évidemment changer l'iso change un peu l'apparance de la photo. Ici ça se manifeste pour du grain en argentique et du bruit en numérique. </p>
+						<p>Le grain en argentique est du au fait de la taille des grains sur le film. Les artefacts ne sont pas colorés. Certaines personnes aiment l'apparence du grain et trouvent qu'ils apporte du caractère à la photo</p>
+						<p>En numérique la sensibilité accrue s'accompagne d'imprécision. Le photocapteur peut faire "lumière !!! euh..... vert !" alors que ce n'est pas vert. C'est généralement moche</p>
+						<p>Il y a des algorithmes de correction de bruit, mais ça a tendence à faire perdre tous les détails à la photo.</p>
+						</aside>
+				</section>
+				<section class="apertureExample dark" data-background="#101010">
+					<h1>Note: ne regardez pas les photos à 100%</h1>
+					<img src="img/street.jpg" style="width:400px">
+					<img src="img/thinkpad.jpg" style="width:400px">
+					<div class="credit">Credit Photo: <a href="https://www.flickr.com/photos/lennox_mcdough/6251603888">Toblas Abel</a></div>
+						<aside class="notes">
+						<p>Mais en général ce n'est que dans les cas extrêmes qu'on remarque les imperfections. L'exposisiton et la composition de la photo reste plus important.</p>
+						</aside>
+				</section>
+			</section>
+
+				<section class="ISOnumbers">
+					<h1>ISO: TL;DR</h1>
+						<ul>
+							<li>100</li>
+							<li>200</li>
+							<li>400</li>
+							<li>800</li>
+							<li>1600</li>
+							<li>3200</li>
+							<li>6400</li>
+							<li>12800</li>
+						</ul>
+
+<<<<<<< HEAD
+						<h3 style="position: absolute;left:0">Moins sensible</h3>
+						<h3 style="position: absolute;right:0">Plus sensible</h3>
+=======
+						<h3 style="position: absolute;left:0">Moins lumineux</h3>
+						<h3 style="position: absolute;right:0">Plus lumineux</h3>
+>>>>>>> 69f3f133983461d769b0c3664cb573f789578f33
+
+					<img class="nodeco" src="img/flowerzoom.jpg" style="width:200px; position:absolute;left:0;margin-top:1.5em">
+					<img class="nodeco" src="img/digitalNoiseZoom.png" style="width:200px; position:absolute;right:0;margin-top:1.5em">
+					<p style="position:absolute;left:218px;bottom:-3em;font-size:0.75em">Tout lisse</p>
+					<p style="position:absolute;right:218px;bottom:-8em;font-size:0.75em">Bruit/grain</p>
+						<aside class="notes">
+						<p>En résumé, plus d'iso = plus de sensibilité = plus de bruit/grain.</p>
+						</aside>
+				</section>
+
+		<section class="dark" data-background="#101010">
+			<section>
+				<h1>Mesure de la lumière</h1>
+			</section>
+
+			<section class="psamTable">
+				<h1>Forcez une valeur, l'appareil photo s'occupe du reste</h1>
+				<table>
+				<thead><th>	</th>			<th>Auto</th> <th>P</th> <th>S</th> <th>A</th> <th>M</th></thead>
+				<tbody>
+				<tr><td>Ouverture</td>	<td class="psamAuto">Auto</td> <td class="psamAuto">Auto</td> <td class="psamAuto">Auto</td> <td>Manuel</td> <td>Manuel</td></thead></tr>
+				<tr><td>Vitesse</td>	<td class="psamAuto">Auto</td> <td class="psamAuto">Auto</td> <td>Manuel</td> <td class="psamAuto">Auto</td> <td>Manuel</td></thead></tr>
+				<tr><td>ISO</td> 		<td class="psamAuto">Auto</td> <td>Manuel</td> <td>Manuel</td> <td>Manuel</td> <td>Manuel</td></thead></tr>
+				</tbody>
+				</table>
+						<aside class="notes">
+						<p>Donc quand vous mettez l'appareil photo en mode A ou S, l'appareil photo s'occupe de faire le reste des réglages. La question c'est: comment est-ce que l'appareil est capable de faire ces réglages ? Et plus important: quand est-ce que ça marche pas, et qu'est-ce qu'on peut faire ?</p>
+						</aside>
+
+			</section>
+			<section data-background="#777">
+			<h1>Ce que l'appareil photo voudrait voir</h1>
+				<aside class="notes">
+					<p>Ca c'est ce qu'on appelle un gris moyen 18%.</p>
+
+					<p>Les ingés ont constaté qu'en moyenne, la lumière d'une scène bien exposée renvoie tout autant de lumière qu'une surface qui a une clarté moyenne,
+					ce qui correspond par la magie de la physique à une réflectance de 18%. On parle d'ailleurs souvent d'un "gris 18%".</p>
+					<p>L'algorithme le plus basique que va appliquer l'appareil photo, c'est de mesurer la lumière de la scène qu'il a en face de lui et de répliquer le gris 18% en bougeant les paramètres.</p>
+					<p>Si on est en mode A (donc on contrôle l'ouverture) l'appareil va compenser en modifiant la vitesse</p>
+					<p>Si on est en mode S (contrôle de la vitesse) l'appareil va compenser en modifiant l'ouverture.</p>
+					<p>Si on est en mode auto, l'appareil va faire de la magie.</p>
+
+				</aside>
+			</section>
+
+			<section>
+				<img src="img/underexposed.jpg" style="width:900px">
+				<div class="credit">Credit Photo: <a href="https://www.flickr.com/photos/fcb/161873002">Fred Benenson</a></div>
+				<aside class="notes">
+					<p>Alors des fois ça foire. Par exemple ici on a toujours en moyenne du gris 18%, mais la lumière est apportée en vaste majorité par le soleil.
+					Du coup les détails de la ville en elle-même sont perdus.</p>
+
+					<p>Heureusement on peut remedier en partie ça en disant à l'appareil quel zone utiliser pour faire la moyenne</p>
+				</aside>
+			</section>
+
+			<section>
+			<h1>Mode de mesure de la lumière</h1>
+				<img class="nodeco" src="img/metering-spot-w.png"><img class="nodeco" src="img/metering-center-w.png"><img class="nodeco" src="img/metering-matrix-w.png">
+				<img class="nodeco" src="img/metering-spot-cam.png"><img class="nodeco" src="img/metering-center-cam.png"><img class="nodeco" src="img/metering-matrix-cam.png">
+				<aside class="notes">
+					<p>Il y a trois modes de mesure</p>
+					<p>Spot: seulement 2-3% de la photo</p>
+					<p>Pondéré centré central: soit c'est une plus grande zone au centre, soit c'est une sorte de gradient d'importance</p>
+					<p>Matrice: mesure partout et fait de la pagie</p>
+					<p>Matrice ne donne pas toujours le même résultat, du coup certains photographe préfèrent se focaliser sur les deux autres modes. (predactibilité) </p>
+				</aside>
+			</section>
+
+			<section>
+			<h1>Verrouillage d'exposition ("AE-Lock")</h1>
+				<img class="nodeco" src="img/AE-lock-button.jpg">
+				<aside class="notes">
+					<p>Ce bouton est particulièrement utile quand vous voulez recadrer. Ce qu'il fait c'est de dire à l'appareil d'arreter de re-évaluer la scène en matière exposition  Par example, vous voulez prendre une personne à contre jour en mode spot, mais comme vous l'apprendrez plus tard en cours de composition, centrer le sujet sur une photo c'est généralement mal. Vous exposez sur la personne, vous appuyez sur le bouton, ça verrouille l'expo et après vous recadrez.</p>
+				</aside>
+			</section>
+
+
+		</section>
+
+		<section>
+			<section>
+				<h1>Autofocus</h1>
+				<aside class="notes">
+					<p>Avoir une bonne exposition, c'est bien, mais avoir un sujet au point, c'est mieux. Donc avoir un sujet au point, ça veut dire quoi ?</p>
+				</aside>
+			</section>
+
+			<section>
+				<img class="nodeco" style="width:49%" src="img/autofocus-contrast-2.png" />
+				<img class="nodeco" style="width:49%" src="img/autofocus-phase-2.png" / >
+				<div class="credit">Crédit photo: <a href="http://graphics.stanford.edu/courses/cs178/applets/applets.html">Mark Levoy</a></div>
+				<aside class="notes">
+					<p>Ca veut dire que tous les rayons lumineux qui partent d'un point de l'objet se retrouvent au meme point sur le capteur. Pour arriver à ce point, les constructeurs d'appareil photos ont inventé deux solutions d'autofocus, l'un qui maximise le contraste et l'autre qui detecte la phase des rayons lumineux envoyé par l'objet.</p>
+					<p>Je ne vais pas m'étendre trop sur le sujet. Sachez seulement qu'historiquement, la méthode par contraste a été plus lente mais plus précise et que la méthode avec les phases ne demande pas autant de batterie. Mais maintenant les deux systèmes sont kif kif en terme de vitesse.</p>
+					<p>Ce qui est important de savoir, c'est comment ça marche.</p>
+					<p>Généralement l'autofocus fonctionne en appuyant à moitié sur le déclencheur. Si vous avez un appareil un peu plus haut de gamme, il est possible d'avoir un bouton dédié, typiquement "AF-ON".</p>
+					<p>Donc vous appuyez sur le bouton, et l'appareil mets au point. C'est magique mais il y a quelques subtilité à saisir.</p>
+				</aside>
+			</section>
+
+			<section>
+				<img class="nodeco" style="width:49%" src="img/af-canon.jpg" /><br />
+				<img class="nodeco" style="width:49%" src="img/af-nikon.jpg" / >
+				<div class="credit">Crédit photo: <a href="http://www.nikonusa.com/en_INC/IMG/Images/Learn-Explore/Camera-Technology/D-SLR/2009/51-Point-AF-System/Media/D4-AF-Points_all5.jpg">Nikon</a>, <a href="http://cpn.canon-europe.com/files/education/technical/mark_iii_af/caption_006.jpg">Canon</a></div>
+				<aside class="notes">
+					<p>Premièrement, les points d'autofocus. Dans votre viseur, vous êtes libre de choisir où vous voulez mettre au point. À quoi ça sert ? Un des exemples possible est de composer votre photo sans avoir votre sujet au centre. Donc vous cadrez votre photo, et après vous appuyez sur le bouton d'autofocus. C'est un des moyen de mettre au point; une autre façon serait de laisser le sujet au centre, mettre au point puis après déplacer l'appareil tout en laissant le déclencheur à moitié appuyé, et enfin prendre la photo en appuyant complètement sur le déclencheur.
+					</p>
+				</aside>
+			</section>
+
+			<section class="autofocus">
+				<table style="margin: 0 auto">
+				<thead><th>Canon</th><th>Nikon</th><th>veut dire</th></thead>
+				<tbody>
+				<tr><td>One shot</td><td>AF-S</td><td style="font-size:0.5em">Mets au point une seule fois</td></tr>
+				<tr><td>AI servo</td><td>AF-C</td><td style="font-size:0.5em">Mets au point continuellement</td></tr>
+				<tr><td>AI focus</td><td>AF-A</td><td style="font-size:0.5em">Décide magiquement de passer entre les deux modes</td></tr>
+				</tbody>
+				</table>
+				<aside class="notes">
+					<p>La deuxième subtilité est le mode d'autofocus, autrement, qu'est-ce qui arrive quand on essaie de mettre au point. Il y a principalement deux modes d'action: soit on mets au point une fois et on oublie, soit l'appareil mets au points continuellement jusqu'à ce qu'on prenne la photo.</p>
+				</aside>
+
+			</section>
+
+		</section>
+		<section class="dark"  data-background="#101010">
+			<h1>Longueur focale</h1>
+				<aside class="notes">
+					<p>Live demo time</p>
+					<p>Les mm correspondent à l'angle de vue. L'équivalent à l'oeil humain se trouve entre 35 et 50mm.</p>
+				</aside>
+		</section>
+
+		<section>
+			<section>
+				<h1>En résumé:</h1>
+			</section>
+
+				<section class="shutterSpeed">
+					<h1>Vitesse: TL;DR</h1>
+					<ul>
+						<li>2"</li>
+						<li>1"</li>
+						<li>2</li>
+						<li>4</li>
+						<li>8</li>
+						<li>15</li>
+						<li>30</li>
+						<li>60</li>
+						<li>125</li>
+						<li>250</li>
+					</ul>
+					<div class="clock" style="top:3.25em;left:0%;">
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="slice moreThan180" data-start="0" data-value="360"></div>
+					</div>						<div class="clock" style="top:3.25em;left:84%;">
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+						<div class="tick"></div> <div class="tick"></div> <div class="tick"></div>
+
+						<div class="slice" data-start="0" data-value="4"></div>
+					</div>
+
+					<img class="nodeco" src="img/motorway.jpg" style="height:240px; position:absolute;left:0;margin-top:1.5em">
+					<img class="nodeco" src="img/dolphin.jpg" style="width:200px; position:absolute;right:0;margin-top:1.5em">
+
+						<h3 style="position: absolute;right:0">Moins de lumière</h3>
+						<h3 style="position: absolute;left:0">Plus de lumière</h3>
+					<p style="position:absolute;left:375px;bottom:-2em; font-size:0.75em">Flou de mouvement</p>
+					<p style="position:absolute;right:218px;bottom:-9em; font-size:0.75em">Image figée</p>
+					<aside class="notes">
+					<p>EN RESUME: Temps d'exposition court = nombre grand = moins de lumière = plus de figé.</p>
+					</aside>
+				</section>
+				<section class="shutterSpeed">
+					<h1>Ouverture: TL;DR</h1>
+					<ul>
+							<li>1.4</li>
+							<li>2</li>
+							<li>2.8</li>
+							<li>4</li>
+							<li>5.6</li>
+							<li>8</li>
+							<li>11</li>
+							<li>16</li>
+							<li>22</li>
+							<li>32</li>
+					</ul>
+					<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:3.25em;left:0%;">
+					<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:3.25em;left:84%;">
+
+<<<<<<< HEAD
+						<h3 style="position: absolute;left:0">Plus de lumière</h3>
+						<h3 style="position: absolute;right:0">Moins de lumière</h3>
+=======
+						<h3 style="position: absolute;left:0">Moins de lumière</h3>
+						<h3 style="position: absolute;right:0">Plus de lumière</h3>
+>>>>>>> 69f3f133983461d769b0c3664cb573f789578f33
+
+					<img class="nodeco" src="img/indian.jpg" style="width:300px; position:absolute;left:0;margin-top:1.5em">
+					<img class="nodeco" src="img/library.jpg" style="width:300px; position:absolute;right:0;margin-top:1.5em">
+					<p style="position:absolute;left:318px;bottom:-3em;font-size:0.75em">Bokeh!</p>
+					<p style="position:absolute;right:318px;bottom:-8em;font-size:0.75em">Tout est net</p>
+					<aside class="notes">
+					<p>EN RESUME: Petite ouverture = petit nombre = plus de lumière = plus de flou.</p>
+					</aside>
+		</section>
+
+				<section class="ISOnumbers">
+					<h1>ISO: TL;DR</h1>
+						<ul>
+							<li>100</li>
+							<li>200</li>
+							<li>400</li>
+							<li>800</li>
+							<li>1600</li>
+							<li>3200</li>
+							<li>6400</li>
+							<li>12800</li>
+						</ul>
+					<img class="nodeco" src="img/f1_8.png" style="width:100px;position:absolute;top:3.25em;left:0%;">
+					<img class="nodeco" src="img/f11.png" style="width:100px;position:absolute;top:3.25em;left:84%;">
+
+<<<<<<< HEAD
+						<h3 style="position: absolute;left:0">Moins sensible</h3>
+						<h3 style="position: absolute;right:0">Plus sensible</h3>
+=======
+						<h3 style="position: absolute;left:0">Moins lumineux</h3>
+						<h3 style="position: absolute;right:0">Plus lumineux</h3>
+>>>>>>> 69f3f133983461d769b0c3664cb573f789578f33
+
+					<img class="nodeco" src="img/flowerzoom.jpg" style="width:200px; position:absolute;left:0;margin-top:1.5em">
+					<img class="nodeco" src="img/digitalNoiseZoom.png" style="width:200px; position:absolute;right:0;margin-top:1.5em">
+					<p style="position:absolute;left:218px;bottom:-3em;font-size:0.75em">Tout lisse</p>
+					<p style="position:absolute;right:218px;bottom:-8em;font-size:0.75em">Bruit/grain</p>
+						<aside class="notes">
+						<p>En résumé, plus d'iso = plus de sensibilité = plus de bruit/grain.</p>
+						</aside>
+				</section>
+		</section>
+		<section class="dark"  data-background="#101010">
+			<h1>Divers petit trucs</h1>
+		</section>
+
+		<section>
+			<section>
+				<h1>Indice de lumination (Exposure Value ou EV), "Stop"</h1>
+			</section>
+
+			<section class="didYouNotice">
+				<h1>Avez-vous remarqué ?</h1>
+				<h3>Vitesse</h3>
+				<blockquote>Chaque pas laisse entrer <span class="fragment highlight-red">2 fois moins</span> de lumière que le pas précédent</blockquote>
+				<h3>Ouverture</h3>
+				<blockquote>Chaque pas laisse entrer <span class="fragment highlight-red">2 fois moins</span> de lumière que le pas précédent</blockquote>
+				<h3>ISO</h3>
+				<blockquote>Chaque pas capte <span class="fragment highlight-green">2 fois plus</span> de lumière que le pas précédent</blockquote>
+			</section>
+
+			<section class="evcomp">
+				<h1>Une même illumination correspond à plusieurs combinaison Vitesse/Ouverture/ISO</h1>
+				<ul class="evcomparam">
+					<li>1.4</li>
+					<li data-fragment-index="6" class="fragment highlight-green">2</li>
+					<li>2.8</li>
+					<li data-fragment-index="2" class="fragment highlight-red">4</li>
+					<li data-fragment-index="1" class="fragment highlight-blue">5.6</li>
+					<li>8</li>
+					<li>11</li>
+					<li>16</li>
+					<li>22</li>
+				</ul>
+				<h4 class="evcompap">Ouverture</h4>
+				<ul class="evcomparam">
+					<li>2</li>
+					<li data-fragment-index="5" class="fragment highlight-green">4</li>
+					<li>8</li>
+					<li>15</li>
+					<li data-fragment-index="1" class="fragment highlight-blue">30</li>
+					<li data-fragment-index="3" class="fragment highlight-red">60</li>
+					<li>125</li>
+					<li>250</li>
+					<li>500</li>
+				</ul>
+				<h4 class="evcompsp">Vitesse</h4>
+				<ul class="evcomparam evcomp-iso">
+					<li data-fragment-index="4" class="iso100 fragment highlight-green">100</li>
+					<li>200</li>
+					<li>400</li>
+					<li data-fragment-index="1" class="fragment highlight-blue">800</li>
+					<li>1600</li>
+					<li>3200</li>
+					<li>6400</li>
+				</ul>
+				<h4 class="evcompiso">ISO</h4>
+					<aside class="notes">
+					C'est des stop
+						Du coup ça sert à quoi ? -> choix creatif -> exposure compensation button
+					</aside>
+			</section>
+
+		</section>
+
+		<section>
+
+			<section>
+				<h1>Compensation d'exposition</h1>
+				<img src="img/expcomp.jpg" style="width:50%">
+					<aside class="notes">
+						Sur- ou sous-exposer par rapport à l'estimation de l'appareil
+					</aside>
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-1.jpg" style="width:100%">
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-2.jpg" style="width:100%">
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-3.jpg" style="width:100%">
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-4.jpg" style="width:100%">
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-5.jpg" style="width:100%">
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-6.jpg" style="width:100%">
+			</section>
+
+			<section data-transition="fade">
+				<img src="img/ev-7.jpg" style="width:100%">
+			</section>
+
+		</section>
+
+		<section>
+			<h1>Désactivez le bip de mise au point</h1>
+		</section>
+
+		<section>
+			<h1>... et la lampe de mise au point</h1>
+		</section>
+
+		<section>
+			<h1>Le flash popup, SAIMAL<sup>tm</sup></h1>
+		</section>
+
+		<section>
+			<h1 style="font-size:2em;margin-bottom:1em"> <q>Ma photo est floue !</q></h1>
+			<ol style="text-align:left;width:66%;margin: 0 auto">
+				<li class="fragment roll-in" style="margin:0.5em">Vitesse ? ("1/focale")</li>
+				<li class="fragment roll-in" style="margin:0.5em">Tenir correctement l'appareil</li>
+				<li class="fragment roll-in" style="margin:0.5em">Utiliser un trepied</li>
+			</ol>
+		</section>
+
+		<section>
+			<h1 style="font-size:1.5em;margin-bottom:1em"> <q>Quelle est le meilleur X ?</q></h1>
+			<p style="margin-bottom:1em">(X = pièce d'équipement)</p>
+			<ul style="text-align:left;width:66%;margin: 0 auto">
+				<li class="fragment roll-in" style="margin:0.5em">Celui qui ne vous endette pas sur 3 génération</li>
+				<li class="fragment roll-in" style="margin:0.5em">Celui que vous avez avec vous</li>
+				<li class="fragment roll-in" style="margin:0.5em">Celui qui est adapté à la situation</li>
+			</ul>
+		</section>
+
+		<section>
+			<h1 style="font-size:1.5em;margin-bottom:1em">"Plus de megapixel = mieux ?" </h1>
+			<p class="fragment roll-in" style="font-size:5em;">Non.</p>
+		</section>
+
+		<section>
+			<h1 style="font-size:1.5em;margin-bottom:1em"> <q>Mes photos sont chiantes.</q></h1>
+			<ul style="text-align:left;width:66%;margin: 0 auto">
+				<li class="fragment roll-in" style="margin:0.5em">Changez de point de vue</li>
+				<li class="fragment roll-in" style="margin:0.5em">Réflechissez à la composition</li>
+				<li class="fragment roll-in" style="margin:0.5em">Changez de sujet</li>
+				<li class="fragment roll-in" style="margin:0.5em">Imposez-vous une contrainte</li>
+			</ul>
+		</section>
+
+
+		<section>
+			<h1 style="font-size:3em">Questions ?</h1>
+		</section>
+
+
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'slide',
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		Reveal.addEventListener( 'fragmentshown', function( event ) {
+			if (event.fragment.parentElement.classList[0] === "evcomparam") {
+				switch(event.fragment.getAttribute("data-fragment-index")){
+					case "0":break;
+					case "1":
+						//document.querySelector('ul.evcomparam')
+					break;
+				}
+			}
+		    // event.fragment = the fragment DOM element
+		} );
+		</script>
+
+	</body>
+</html>
